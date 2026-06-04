@@ -39,7 +39,7 @@ jobs:
         # Mengubah direktori kerja ke dalam folder MLProject
         cd MLProject
         
-        # Sintaks mlflow build-docker untuk membungkus environment proyek menjadi Image mandiri
+        # Sintaks mlflow build-docker untuk membungkus environment proyek menjadi Image mandiri 
         mlflow models build-docker -m . -n ${{ secrets.DOCKERHUB_USERNAME }}/mlflow-flower-model:latest
         
         # Mengunggah Image hasil build ke cloud Docker Hub
